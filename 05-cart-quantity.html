@@ -9,11 +9,38 @@
   </head>
 <body>
 
-  <button onClick=`Show $(cartQuantity)`> Show quanity</button>
-  <button> Add to cart</button>
-  <button> +2 </button>
-  <button> +3 </button>
-  <button> Reset cart</button>
+  <button onClick="console.log(`Cart Quantity: ${cartQuantity}`);"> 
+    Show quanity
+  </button>
+
+  <button onClick="
+    cartQuantity ++;
+    console.log(`Cart Quantity: ${cartQuantity}`)";
+  > 
+    Add to cart
+  </button>
+
+  <button onClick="
+    cartQuantity += 2;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+    "
+  
+  > +2 </button>
+
+  <button onclick="
+    cartQuantity += 3;
+    console.log(`Cart Quantity: ${cartQuantity}`)
+  "> 
+    +3 
+  </button>
+
+  <button onClick="
+    cartQuantity=0; 
+    console.log('Cart was reset');
+    console.log(`Cart Quantity: ${cartQuantity}`);
+  "> 
+    Reset cart
+  </button>
 
   
 
